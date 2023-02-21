@@ -1,0 +1,1571 @@
+@import 'zeroing';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik:wght@400;500;700&display=swap');
+
+// Файлы подключения
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 768px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 690px) {
+    .container {
+        max-width: 320px;
+        padding: 10px;
+    }
+}
+
+
+
+// ------------ Начало верхнего меню -----------
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px rgba(7, 59, 161, 0.1);
+    padding-bottom: 15px;
+
+    .header_menu {
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-around;
+
+        .header_menu_link {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .text_logo {
+        width: 160px;
+        border-left: 2px solid #073BA1;
+        padding-left: 10px;
+        margin-right: 260px;
+        padding-top: 4px;
+
+        p {
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #073BA1;
+        }
+    }
+}
+
+.button {
+    a {
+        padding: 10px 30px 10px 30px;
+        background: #073BA1;
+        border-radius: 8px;
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.button_red a {
+    background: #EC3D5A;
+}
+
+.header_menu_link_text {
+    padding-left: 16px;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #073BA1;
+    }
+}
+
+.header_menu_link_date p {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #073BA1;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .header_menu_link img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .text_logo {
+        display: none;
+    }
+
+    .header_menu_list:nth-child(1) {
+        order: -2;
+    }
+
+    .header_menu_list:nth-child(5) {
+        order: -1;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        @media (max-width: 750px) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .button_red a {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 690px) {
+    .header_menu_link img {
+        margin-top: 10px;
+        margin-right: 58px;
+        width: 90px;
+        height: 30px;
+    }
+
+    .header_menu_list:nth-child(5) {
+        display: none;
+    }
+
+    .header_menu_list:nth-child(4) {
+        display: none;
+    }
+
+    .burger {
+        padding-left: 10px;
+        margin-top: 12px;
+        display: block;
+    }
+}
+
+// ------------- Конец верхнего меню --------------
+// ------------- Начало блока Сервис --------------
+.service {
+    background-image: url(../img/main/service/background.jpg);
+    background-repeat: no-repeat;
+    background-position: right 50px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.service_top {
+    max-width: 780px;
+}
+
+.service_title {
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #073BA1;
+    }
+}
+
+.service_body {
+    max-width: 640px;
+}
+
+.service_menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.service_link {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-left: 8px;
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #042668;
+    }
+
+    &::before {
+        content: url(../img/main/service/rhomb.svg);
+    }
+}
+
+.service_text {
+    margin-top: 36px;
+
+    p {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #042668;
+    }
+}
+
+.service_button {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.button_white {
+    a {
+        color: #073BA1;
+        background-color: #FFFFFF;
+        border: 1px solid #073BA1;
+    }
+}
+
+.service_bottom {
+    margin-top: 122px;
+    display: flex;
+    justify-content: right;
+}
+
+.service_bottom_achievments {
+    padding: 30px 35px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+    border-radius: 16px;
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service_bottom_achievments_list {
+    width: 140px;
+
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: #073BA1;
+    }
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #042668;
+    }
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .service {
+        background-image: url(../img/main/service/background_tablet.jpg);
+        background-position: right 400px;
+    }
+
+    .service_bottom {
+        margin-top: 390px;
+    }
+
+    .service_bottom_achievments_list {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 690px) {
+    .service {
+        background-image: url(../img/main/service/background_mobil.jpg);
+        background-position: right 700px;
+        padding-left: 15px;
+    }
+
+    .service_title {
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .service_menu {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service_link {
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+
+        &::before {
+            content: url(../img/main/service/rhomb_mobil.svg);
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+
+    .service_text {
+        margin-top: 24px;
+    }
+
+    .service_button {
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-top: 46px;
+
+        a {
+            display: block;
+            padding: 16px 80px;
+        }
+    }
+
+    .button_white {
+        margin-top: 10px;
+    }
+
+    .service_bottom_achievments {
+        padding: 30px 0px 30px 24px;
+    }
+
+    .service_bottom_achievments_list {
+        width: 90px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .service_body {
+        max-width: 320px;
+    }
+}
+
+// ------------- Конец блока Сервис --------------
+// ------------- Начало блока "Как заказать" -----
+.ordering_title {
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #073BA1;
+    }
+}
+
+.ordering_body {
+    margin-top: 60px;
+}
+
+.ordering_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(../img/main/ordering/background.svg);
+    background-repeat: no-repeat;
+    background-position: 94px 40px;
+}
+
+.ordering_menu_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 120px;
+    max-width: 250px;
+
+
+    h2 {
+        margin-top: 20px;
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #073BA1;
+    }
+
+    p {
+        margin-top: 10px;
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #79859E;
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.ordering_menu_icons {
+    display: flex;
+    margin-left: 60px;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .ordering_menu {
+        background: none;
+    }
+
+    .ordering_menu_list {
+        max-width: 315px;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .ordering_menu_icons {
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-right: 10px;
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .ordering_title {
+        h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .ordering_menu_icons {
+        margin-left: 0px;
+        margin-top: 40px;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .ordering_menu_list {
+        max-width: 350px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .ordering_body {
+        margin-top: 30px;
+    }
+}
+
+// ------------- Конец блока "Как заказать" -------
+// ------------- Начало блока "Популярные оценки"--
+
+.title_rating {
+    margin-bottom: 60px;
+
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #073BA1;
+    }
+}
+
+.menu_rating {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu_rating_list {
+    margin-bottom: 20px;
+    max-width: 580px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.menu_rating_list_image {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.price_pfone {
+    display: none;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #073BA1;
+    }
+}
+
+.menu_rating_info {
+    margin-left: 20px;
+}
+
+.menu_rating_list_text {
+
+    h4 {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #042668;
+        margin-top: 6px;
+    }
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #042668;
+    }
+
+    span:before {
+        content: url(../img/main/rating/time.svg);
+        display: inline-block;
+        position: relative;
+        top: 6px;
+    }
+}
+
+.menu_rating_list_info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #073BA1;
+    }
+}
+
+.menu_rating_list_info_price {
+    margin-right: 218px;
+}
+
+.menu_rating_list_info_button {
+    background: #EC3D5A;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+
+    a {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1100px) {
+    .title_rating {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .menu_rating_list {
+        max-width: 728px;
+    }
+
+    .menu_rating_list_info_price {
+        margin-right: 366px;
+    }
+}
+
+@media (max-width: 690px) {
+    .title_rating {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .menu_rating {
+        width: 300px;
+    }
+
+    .menu_rating_list {
+        max-width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu_rating_list_image {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .menu_rating_info {
+        margin-left: 10px;
+    }
+
+    .menu_rating_list_info_price {
+        display: none;
+    }
+
+    .price_pfone {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .menu_rating_list_info {
+        justify-content: right;
+    }
+}
+
+// ------------- Конец блока "Популярные оценки"---
+// ------------- Начало блока "Виды оценки"--------
+.title_typesrating {
+    margin-top: 120px;
+
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #073BA1;
+    }
+
+}
+
+.body_menu_typesrating {
+    margin-bottom: 40px;
+}
+
+.menu_typesrating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.menu_typesrating_list {
+    width: 33, 3333%;
+    padding: 10px 50px 10px 50px;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #073BA1;
+        text-align: center;
+    }
+
+    &:hover {
+        border-bottom: 2px solid #073BA1;
+    }
+}
+
+@media (max-width: 1100px) {
+    .title_typesrating {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .title_typesrating {
+        margin-top: 80px;
+    }
+
+    .title_typesrating {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 26px;
+
+        }
+    }
+
+    .menu_typesrating_list {
+        width: 33, 3333%;
+        padding: 5px 10px 10px 5px;
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+
+// ------------- Конец блока "Виды оценки"----------
+// ------------- Начало блока "Вопросы"-------------
+.title_questions {
+    margin-top: 120px;
+    text-align: center;
+
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: #073BA1;
+    }
+}
+
+.body_questions {
+    margin-top: 60px;
+    display: flex;
+}
+
+.image_questions {
+    flex: 1 1 0;
+    align-items: center;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 370px;
+    }
+}
+
+.menu_questions {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.menu_questions_list {
+    padding: 15px;
+    list-style-type: none;
+    box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #042668;
+    }
+
+    span {
+        font-family: 'Rubik';
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/main/questions/icons/Staricons.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    .body_questions {
+        flex-direction: column;
+    }
+
+    .menu_questions {
+        order: -1;
+    }
+
+    .title_questions {
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .body_questions {
+        margin-top: 40px;
+    }
+
+    .image_questions {
+        img {
+            width: 33%;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .title_questions {
+        h2 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .body_questions {
+        margin-top: 30px;
+    }
+
+    .menu_questions_list {
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .image_questions {
+        img {
+            width: 77%;
+        }
+    }
+}
+
+// ------------- Конец блока "Вопросы"-------------
+// ------------- Начло блока "Преимущества"--------
+.title_advantages {
+    margin-top: 174px;
+    text-align: center;
+
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: #073BA1;
+    }
+}
+
+.menu_advantages {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_advantages_list {
+    flex: 1 1 0;
+    padding: 30px;
+    box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.tablet_advantages {
+    display: none;
+}
+
+.text_menu_advantages_list {
+    max-width: 280px;
+
+    >p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #073BA1;
+    }
+}
+
+.name_menu_advantages_list {
+    margin-bottom: 10px;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #073BA1;
+    }
+}
+
+.image_menu_advantages_list {
+    margin-top: -10px;
+    text-align: right;
+}
+
+@media (max-width: 1100px) {
+    .title_advantages {
+        margin-top: 80px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .menu_advantages {
+        flex-wrap: wrap;
+    }
+
+    .menu_advantages_list {
+        margin-bottom: 20px;
+        flex: 1 0 auto;
+    }
+
+    .tablet_advantages {
+        display: block;
+    }
+}
+
+@media (max-width: 690px) {
+    .title_advantages {
+        margin-top: 80px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .menu_advantages_list {
+        flex: 1 1 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 0px;
+    }
+
+    .text_menu_advantages_list {
+        >p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+// ------------- Конец блока "Преимущества"--------
+// ------------- Начало блока "Отзывы"-------------
+.title_reviews {
+    margin-top: 120px;
+    text-align: center;
+
+    h2 {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: #073BA1;
+    }
+}
+
+.menu_reviews {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_reviews_list {
+    width: 33%;
+    padding: 30px;
+    box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+    border-radius: 20px;
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+
+.top_menu_reviews_list {
+    display: flex;
+    margin-bottom: 14px;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #042668;
+    }
+}
+
+
+.image_top_menu_reviews_list {
+    margin-right: 33px;
+
+    img {
+        padding-top: 5px;
+        padding-left: 33px;
+    }
+}
+
+.name_top_menu_reviews_list {
+    p {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #073BA1;
+    }
+}
+
+.bottom_menu_reviews_list {
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #042668;
+    }
+}
+
+@media (max-width: 1100px) {
+    .title_reviews {
+        margin-top: 80px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .menu_reviews {
+        margin-top: 40px;
+    }
+
+    .menu_reviews_list {
+        flex: 1 1 0;
+
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .title_reviews {
+        margin-top: 80px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .menu_reviews {
+        margin-top: 30px;
+    }
+
+    .menu_reviews_list {
+        flex: 1 1 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+
+    .bottom_menu_reviews_list {
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+// ------------- Конец блока "Отзывы"---------------
+// ------------- Начало блока "Отзывы"--------------
+.ask {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 60px;
+    box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+    border-radius: 30px;
+    background-image: url(../img/main/ask/backgrond_ask.png);
+    background-repeat: no-repeat;
+    background-position: 780px 100px;
+
+    p {
+        max-width: 510px;
+        margin-top: 20px;
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #042668;
+    }
+}
+
+.title_ask {
+    text-align: left;
+
+    h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: #073BA1;
+    }
+}
+
+.input_form_ask {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-top: 26px;
+}
+
+.input_form_ask {
+    h6 {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #042668;
+    }
+
+    p {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #042668;
+    }
+}
+
+.name_input_form_ask {
+    margin-right: 20px;
+}
+
+.input_type {
+    align-items: center;
+    padding: 0px 14px;
+    width: 280px;
+    height: 50px;
+    background: #F1F6FB;
+    border: 1px solid #E8EEF3;
+    border-radius: 8px;
+}
+
+.warning_text_ask {
+    p {
+        max-width: 320px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #79859E;
+    }
+}
+
+.button_form_ask {
+    margin-top: 30px;
+    background: #EC3D5A;
+    border-radius: 8px;
+    padding: 13px 70px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.ask_tablet {
+    display: none;
+}
+
+.ask_mobil {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .ask {
+        display: none;
+    }
+
+    .ask_tablet {
+        position: relative;
+        display: block;
+        padding: 80px 206px;
+    }
+
+    .image_ask_tablet {
+        position: absolute;
+        z-index: -2;
+        top: 186px;
+        left: 428px;
+    }
+
+    .body_form_ask_tablet {
+        min-width: 426px;
+        box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+        border-radius: 30px;
+        padding: 40px;
+        background-color: #fff;
+    }
+
+    .title_ask_tablet {
+        text-align: center;
+
+        h2 {
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            color: #073BA1;
+        }
+    }
+
+    .text_form_ask_tablet {
+        margin-top: 28px;
+
+        p {
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #042668;
+        }
+    }
+
+    .input_form_ask {
+        flex-direction: column;
+    }
+
+    .name_input_form_ask {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .warning_text_ask {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 690px) {
+    .ask_tablet {
+        display: none;
+    }
+
+    .ask_mobil {
+        display: block;
+    }
+
+    .title_ask_mobil {
+        text-align: center;
+        margin-top: 80px;
+
+        h2 {
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: #073BA1;
+        }
+    }
+
+    .text_form_ask_tablet {
+        margin-top: 22px;
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .image_ask_mobil {
+        margin-top: 30px;
+    }
+}
+
+.footer_tablet {
+    display: none;
+}
+
+.footer {
+    background-color: #073BA1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+}
+
+.body_footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.left_body {
+    margin-right: 20px;
+}
+
+.footer_logo {
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 156px;
+    }
+}
+
+.footer_info {
+    display: flex;
+    flex: 1 1 0;
+    margin-bottom: 10px;
+}
+
+.footer_info_list {
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.footer_info_list:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer_info_list_flex {
+    display: flex;
+}
+
+.footer_info_list_left {
+    margin-right: 20px;
+}
+
+.footer_icons {
+    display: flex;
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.footer_adress {
+    max-width: 350px;
+}
+
+.footer_tablet {
+    display: none;
+}
+
+.footer_mobil {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .footer {
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .body_footer {
+        display: none;
+    }
+
+    .footer_tablet {
+        margin: 0 auto;
+        max-width: 768px;
+        display: block;
+        display: flex;
+        flex: 1 1 0;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer_tablet_info {
+        margin-right: 16px;
+        padding-right: 10px;
+    }
+
+    .footer_tablet_info_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_tablet_info_flex_left {
+        margin-right: 10px;
+    }
+
+    .footer_tablet_fhone_flex {
+        display: flex;
+    }
+
+    .footer_tablet_fhone {
+        span {
+            margin-left: 10px;
+        }
+    }
+
+    .footer_adress {
+        margin-top: 19px;
+        margin-bottom: 42px;
+    }
+
+    .footer_logo {
+        p {
+            margin-bottom: 220px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        img {
+            width: 120px;
+            height: 40px;
+        }
+    }
+
+    .footer_copy {
+        p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .left_body {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 690px) {
+    .footer_tablet {
+        display: none;
+    }
+
+    .footer_mobil {
+        display: block;
+        margin: 0 auto;
+        max-width: 320px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 40px;
+        padding-right: 5px;
+
+        p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+
+    .footer_mobil_logo {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 135px;
+            height: 45px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .footer_mobil_info {
+        display: flex;
+        flex: 1 1 0;
+    }
+
+    .footer_icons {
+        img {
+            margin-right: 0px;
+            width: 40px;
+            height: 30px;
+        }
+    }
+
+    .footer_tablet_info_flex_left {
+        margin-right: 0px;
+    }
+}
