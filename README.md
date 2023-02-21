@@ -1,1 +1,1 @@
-# clinic
+permalink: index.html
