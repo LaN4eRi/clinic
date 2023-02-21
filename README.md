@@ -1,4 +1,1 @@
 # clinic
----
-permalink: /index.html
----
